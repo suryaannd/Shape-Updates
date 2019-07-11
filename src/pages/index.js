@@ -10,13 +10,10 @@ const IndexPage = () => (
   <Layout>
     <div className="Hero">
       <div className="HeroGroup">
-        <h1>Constantly Evolving</h1>
-        <p>
-          Did you know that we update Scrumpy 13 times a day on average? We're
-          continuously improving your experience. Learn more about our latest
-          additionse
-        </p>
+        <h1>Always on the run</h1>
+        <p>Stay in the know on what's happening inside shape</p>
       </div>
+      <Updates />
       <Updates />
     </div>
   </Layout>

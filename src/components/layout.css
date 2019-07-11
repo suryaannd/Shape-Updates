@@ -25,7 +25,7 @@ body {
 }
 
 .HeroGroup h1 {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 48px;
   letter-spacing: 0.6px;
   margin: 0;
@@ -40,75 +40,55 @@ body {
   font-weight: 400;
 }
 
-@media (max-width: 375px) {
-  .HeroGroup h1 {
-    font-size: 34px;
-    font-weight: 800;
-    letter-spacing: 0px;
+@media (max-width: 360px) {
+  .HeroGroup {
+    max-width: 280px;
+    padding-top: 120px;
   }
-
-  .HeroGroup p {
-    font-size: 20px;
-    margin: 0px 16px;
-  }
-}
-
-@media (max-width: 320px) {
   .HeroGroup h1 {
     font-size: 32px;
   }
-
   .HeroGroup p {
-    font-size: 20px;
-    margin: 0px 16px;
+    font-size: 16px;
   }
 }
 
 .GridSection {
-  padding-top: 140px;
-  padding-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 20px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
   width: 980px;
   margin: auto;
   justify-items: center;
 }
 
+@media (max-width: 1100px) {
+  .GridSection {
+    width: 800px;
+  }
+}
+
 @media (max-width: 768px) {
   .GridSection {
-    padding-top: 120px;
-    padding-bottom: 80px;
     grid-template-columns: 1fr;
-    grid-gap: 40px;
     width: 500px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .GridSection {
-    padding-top: 120px;
-    padding-bottom: 80px;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    width: 315px;
-  }
-}
-
-@media (max-width: 320px) {
-  .GridSection {
-    padding-top: 120px;
-    padding-bottom: 80px;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    width: 280px;
+    width: 200px;
+    padding-top: 20px;
   }
 }
 
 .Update h1 {
-  font-size: 48px;
+  font-size: 42px;
   line-height: 1.2;
   font-weight: 800;
+  letter-spacing: 0.4px;
   margin: 0px;
   padding-bottom: 24px;
   color: white;
@@ -119,8 +99,10 @@ body {
   font-weight: 400;
   max-width: 480px;
   margin: 0px;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #c1c4e6;
+  padding-bottom: 42px;
+  letter-spacing: 0.8px;
 }
 
 .Update h4 {
@@ -131,6 +113,14 @@ body {
   margin: 0px;
   padding-bottom: 12px;
   color: #c1c4e6;
+}
+
+.Update a {
+  color: #99a7ff;
+  margin: 0;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .Fixes h2 {
@@ -148,20 +138,21 @@ body {
   letter-spacing: 1px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .Update h1 {
-    font-size: 40px;
-    padding-bottom: 16px;
+    font-size: 32px;
   }
-
+  .Update h4 {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+  }
   .Update p {
     font-size: 20px;
   }
-
+  .Update a {
+    font-size: 20px;
+  }
   .Fixes h2 {
     font-size: 28px;
-  }
-  .Fixes li {
-    font-size: 16px;
   }
 }

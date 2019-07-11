@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Link from "gatsby-link"
 
 import Image from "../components/image"
 
@@ -11,10 +12,11 @@ class Update extends React.Component {
         <section className="GridSection">
           <div className="Update">
             <h4>Released July 2, 2019</h4>
-            <h1> Version 32.5</h1>
+            <h1>Version 12.8</h1>
             <p>
               We're so excited to announce animated illustrations to Shape.so
             </p>
+            <Link to="/index">› Check updates now</Link>
           </div>
           <div className="Fixes">
             <h2>Improvements</h2>
@@ -53,7 +55,22 @@ export default Update
 const CheckImage = styled.img`
   height: 64;
   width: 64;
-  top: 210px;
+  top: 150px;
   left: 240px;
   position: relative;
+
+  @media (max-width: 1100px) {
+    left: 54px;
+  }
+
+  @media (max-width: 768px) {
+    left: 48px;
+  }
+
+  @media (max-width: 360px) {
+    left: 20px;
+    top: 70px;
+    height: 42px;
+    width: 42px;
+  }
 `
