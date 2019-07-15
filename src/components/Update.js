@@ -9,10 +9,11 @@ class Update extends React.Component {
     return (
       <div>
         <CheckImage src={require("../images/star.svg")} />
+
         <section className="GridSection">
           <div className="Update">
             <h4>Released July 2, 2019</h4>
-            <h1>Version 12.8</h1>
+            <h1>Shape 2.1</h1>
             <p>
               We're so excited to announce animated illustrations to Shape.so
             </p>
@@ -55,6 +56,7 @@ export default Update
 const CheckImage = styled.img`
   height: 64;
   width: 64;
+  max-width: 64px;
   top: 150px;
   left: 240px;
   position: relative;

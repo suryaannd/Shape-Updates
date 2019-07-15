@@ -30,6 +30,8 @@ body {
   letter-spacing: 0.6px;
   margin: 0;
   padding-bottom: 16px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .HeroGroup p {
@@ -52,10 +54,11 @@ body {
     font-size: 16px;
   }
 }
-
 .GridSection {
   padding-top: 80px;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
@@ -79,8 +82,9 @@ body {
 
 @media (max-width: 360px) {
   .GridSection {
-    width: 200px;
+    width: 280px;
     padding-top: 20px;
+    max-width: 280px;
   }
 }
 
@@ -141,18 +145,27 @@ body {
 @media (max-width: 360px) {
   .Update h1 {
     font-size: 32px;
+    max-width: 280px;
   }
   .Update h4 {
     font-size: 12px;
     letter-spacing: 0.6px;
+    max-width: 280px;
   }
   .Update p {
     font-size: 20px;
+    max-width: 280px;
   }
   .Update a {
     font-size: 20px;
+    max-width: 280px;
   }
   .Fixes h2 {
     font-size: 28px;
+    max-width: 280px;
+  }
+  .Fixes li {
+    font-size: 16px;
+    letter-spacing: 0.4px;
   }
 }
